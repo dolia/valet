@@ -26,9 +26,21 @@ json：
 
 安装方法：
 
-     1. 安装dnsmasql 实现泛域名解析 修改dnsmasql增加泛解析  address=/dev/127.0.0.1
-     2. 现在本项目到任意目录
-     2. 配置虚拟主机,vhost文件参考nginx-vhost.conf   换/Users/dolia/Code/nginx/index.php为实际安装脚本的index.php
+     1. 正常安装Nginx，php  
+     2. 安装dnsmasql 实现泛域名解析 修改dnsmasql增加泛解析  address=/dev/127.0.0.1
+     3. 现在本项目到任意目录
+     4. 配置虚拟主机,vhost文件参考nginx-vhost.conf   换/Users/dolia/Code/nginx/index.php为实际安装脚本的index.php
+
+
+使用方法
+
+   修改valet/config.json 把自己的项目开发目录添加到config.json.paths中即可
+
+
+
+
+
+
 
 
 
