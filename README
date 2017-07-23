@@ -1,0 +1,38 @@
+PHP 开发环境工具
+---------------
+
+
+
+业务场景：
+
+ 很多时候，我们在做PHP开发，需要配置虚拟主机来运行一个PHP项目。这时候我们需要先更改/etc/hosts去配置开发域名，然后去配置nginx 添加虚拟主机，并且不同的项目有自己的特点，如laravel 的index.php入口文件在public下。
+
+为了省去以上繁琐步骤，我们只需要配置一个config文件，就可以省去以上所有步骤；
+
+如，我们开发一个laravel 项目，使用此工具，只需要配置一下json
+
+json：
+
+{
+  "domain":"dev",
+  "paths":[
+    "/home/app"
+  ]
+}
+
+这个时候，只要是在/home/app下的项目，都可以在浏览器以http://defaut.dev域名去访问。省去了配置Nginx，配置hosts配置laralve Nginx rewire.
+
+
+
+安装方法：
+
+     1. 安装dnsmasql 实现泛域名解析 修改dnsmasql增加泛解析  address=/dev/127.0.0.1
+     2. 现在本项目到任意目录
+     2. 配置虚拟主机,vhost文件参考nginx-vhost.conf   换/Users/dolia/Code/nginx/index.php为实际安装脚本的index.php
+
+
+
+
+
+
+
